@@ -45,7 +45,7 @@ RUN tar -xvf $TOMCAT_FILE -C "${TOMCAT_DIR}"
 
 FROM tomcat
 
-ENV APPLICATION_NAME=c08-bca.war
+ENV APPLICATION_NAME=some_application.war
 ENV BILL_PATH /home/c08/bill
 COPY ${APPLICATION_NAME} ${TOMCAT_HOME}/webapps
 
